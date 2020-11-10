@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日焦点</title>
+    
+    <link rel="stylesheet" href="swiper.min.css">
+    <style>
+        .yu {
+            background: rgba(0, 0, 0, 0.726);
+            width: 480px;
+            height: 25px;
+            border-radius: 20px;
+            padding-top: 5px;
+            position: absolute;
+            top: 75px;
+            left: 20px;
+        }
+
+        .yu a {
+            float: left;
+            color: rgb(216, 207, 207);
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 15px;
+        }
+
+        .yu a:hover {
+            color: #00BE06;
+        }
+
+        .brand:hover {
+            color: #00BE06;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: 30px;
+        }
+        .feng{
+            width: 100%;
+            height: 310px;
+            background: black;
+            background:linear-gradient( to top ,#D1CAC1,#211A0F)
+        }
+        .feng_k{
+            float: left;
+            margin-left: 28px;
+        }
+        .feng_k:hover{
+            box-shadow: 0px 0 10px black;
+            cursor: pointer;
+        }
+  
+    header {
+  width: 100%;
+  height: 65px;
+  background-color: #232325;
+}
+header input {
+  background-color: #333333;
+  border: 0px;
+  height: 43px;
+  width: 25%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: absolute;
+  top: 10px;
+  left: 33%;
+  padding-left: 1%;
+  outline: none;
+  font-size: 1.2rem;
+  color: #ccccb2;
+}
+.focus{
+  position: absolute;
+  top: 55px;
+  right: 587px;
+  z-index: 999;
+  display: none;
+}
+header input:hover {
+  background: rgb(68, 68, 68);
+}
+header ::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 1.2rem;
+}
+.re {
+  position: absolute;
+  top: 1.8rem;
+  left: 53%;
+  z-index: 0;
+  color: #66665b;
+  font-size: 1.2rem;
+}
+.suo {
+  width: 100px;
+  height: 45px;
+  background: #00be06;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  top: 0.8rem;
+  left: 57.0%;
+  cursor: pointer;
+}
+.suo:hover {
+  background: #00c806;
+}
+.suo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+.vip img {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+#swiper {
+  width: 100%;
+  height: 430px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 0;
+}
+.vipt {
+  width: 200px;
+  height: 170px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 240px;
+  display: none;
+}
+.viptf {
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: auto;
+  margin-top: -8px;
+}
+.fiff {
+  width: 150px;
+  height: 165px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 215px;
+  display: none;
+}
+.fifff {
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: auto;
+  margin-top: -8px;
+}
+.cs {
+  width: 183px;
+  height: 174px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 137px;
+  display: none;
+}
+.csf {
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: auto;
+  margin-top: -8px;
+}
+.new {
+  width: 303px;
+  height: 389px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 110px;
+  display: none;
+}
+.newf {
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin-top: -8px;
+  margin-left: 237px;
+}
+.le {
+  width: 300px;
+  height: 390px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 45px;
+  display: none;
+}
+.lef {
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: auto;
+  margin-left: 220px;
+  margin-top: -8px;
+}
+.land{
+  width: 190px;
+  height: 210px;
+  background: white;
+  z-index: 990;
+  border-radius: 10px;
+  position: absolute;
+  right: 32px;
+  display: none;
+}
+.landf {
+  width: 0;
+  height: 0;
+  border: 10px solid white;
+  border-top: none;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: auto;
+  margin-left: 160px;
+  margin-top: -10px;
+  z-index: 999;
+}
+.land_img{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor:pointer
+}
+.land_img:hover{
+  background-color: #00be06;
+}
+.vipt_d {
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.vipt_d:hover {
+  background: #f5f5f5;
+  color: #c8a06a;
+}
+.vipt_e {
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.vipt_e:hover {
+  background: #f5f5f5;
+  color: #00be06;
+}
+.vipt_f {
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.vipt_f:hover {
+  background: #f5f5f5;
+  color: #00be06;
+}
+.landff {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.landff:hover {
+  background: #f5f5f5;
+  color: #00be06;
+}
+.vipt_i {
+  background: #c8a06a;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 12px 5px 12px;
+  margin-left: 40%;
+  margin-top: 2px;
+  cursor: pointer;
+  outline: none;
+}
+.vipt_i:hover {
+  background-color: #E2BC81;
+}
+.csf_i {
+  background: #00BE06;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 12px 5px 12px;
+  margin-left: 30%;
+  margin-top: 2px;
+  cursor: pointer;
+  outline: none;
+}
+.csf_i:hover {
+  background-color: #00C806;
+}
+
+.new_u{
+  list-style-type: none;
+}
+.new_u li{
+  float: left;
+  font-size: 15px;
+  padding: 15px 21px 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(136, 133, 133);
+  z-index: 990;
+}
+.new_u li:hover{
+  color:#00C806 ;
+}
+.new_d{
+  width: 30px;
+  height: 43px;
+  position: absolute;
+  right: 238px;
+  border-bottom: 4px solid #00BE06;
+}
+.taila{
+  list-style-type: none;
+}
+.tailaa{
+  float: left;
+  margin-left: 10%;
+  margin-top: 20px;
+  font-weight:500;
+}
+.tailb{
+  float: left;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.tailbb{
+  margin-top: 10px;
+  cursor: pointer;
+}
+.tailbb:hover{
+  color: #00BE06;
+}
+.swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .gallery-top {
+      height: 80%;
+      width: 100%;
+    }
+    .gallery-thumbs {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      height: 100%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .fei:hover{
+        color: #0BC111;
+        cursor: pointer;
+    }
+    .variety-d{
+ width: 100%;
+ height: 100px;
+}.variety-e{
+  float: left;  margin: 20px 0 0 10px;
+  width: 10%;
+  
+  height: 200px;
+  background: #F8F8F8;
+  overflow: hidden;
+}
+.variety-d:hover{
+  transition: all 0.6s;transform: scale(1.1);
+}
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <a href="首页.html"><img style="margin: 10px 0 0 14px;" src="./imgs/logo.jpg"></a>
+            <input class="input" name="ifocus" onfocus="ifocus()" onblur="ibulrs()" id="ifocus" type="text"
+                placeholder="斗罗大陆">
+            <img class="focus" src="imgs/focus.jpg" alt="">
+            <div class="re"><a style="text-decoration: none;color: #66665B;" href="#" id="a">热搜榜</a></div>
+            <div class="suo">
+                <img style="position: relative;top: 8px;left: 5px;" src="./imgs/logo-f.png" alt="">
+                <a href="#">搜全网</a>
+            </div>
+            <div class="vip" style="float: right;margin-right: 6%;margin-top: 0.7rem;">
+                <a href="会员页.html"><img id="vip" onmousemove="show()" onmouseout="leave()" src="./imgs/vip.jpg"></a>
+                <a href="上传.html"><img id="fif" onmousemove="show1()" onmouseout="leave1()" src="./imgs/fif.jpg"></a>
+                <img id="cs" onmousemove="show2()" onmouseout="leave2()" src="./imgs/cs.jpg">
+                <a href="消息登陆.html"><img id="news" onmousemove="show3()" onmouseout="leave3()" src="./imgs/new.jpg"></a>
+                <a href="看过.html"><img id="le" onmousemove="show4()" onmouseout="leave4()" src="./imgs/le.jpg"></a>
+                <a href="登录.html"><img class="land_img" onmousemove="show5()" onmouseout="leave5()" src="./imgs/icon13.jpg"></a>
+            </div>
+        </header>
+        <div class="x">
+            <div class="vipt">
+                <div class="viptf"></div>
+                <div class="vipt_d" style="margin-top: 10px;"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon01.jpg"><span style="margin-left: 25px;font-size: 15px;">了解vip会员特权</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon02.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">领取vip会员福利</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon03.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">做任务，领奖励</span></div>
+                <input class="vipt_i" type="button" onclick="land()" value="登陆">
+            </div>
+
+            <div class="fiff">
+                <div class="fifff"></div>
+                <div class="vipt_e" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon04.jpg"><span style="margin-left: 25px;font-size: 15px;">
+                        </span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon05.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">作品管理</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon06.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">爱奇艺号</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon07.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">我的空间</span></div>
+            </div>
+            <div class="cs">
+                <div class="csf"></div>
+                <div class="vipt_f" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon08.jpg"><span style="margin-left: 25px;font-size: 15px;">新用户广告特权</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon09.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">急速流畅播放</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon10.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">畅享4k视频</span></div>
+                <input class="csf_i" type="button" onclick="land()" value="立即体验">
+            </div>
+            <div class="new">
+                <div class="newf"></div>
+                <ui class="new_u">
+                    <div class="new_d"></div>
+                    <li>更新提醒</li>
+                    <div class="new_d1"></div>
+                    <li>与我相关</li>
+                    <div class="new_d2"></div>
+                    <li>系统消息</li>
+                </ui>
+                <img src="./imgs/icon11.jpg" style="margin: 30% 0 0 20%;"><br>
+                <span style="margin-left: 50px;"><a href="#"
+                        style="text-decoration: none;font-weight: bold;color-interpolation-filters: #00CCC7; "
+                        onclick="land()">登陆</a>后才能查看完整的通知列表哦~</span>
+            </div>
+            <div class="le">
+                <div class="lef"></div>
+                <img src="./imgs/icon12.jpg" style="margin:30% 0 0 24%;"><br>
+                <span style="margin-left: 30%;">暂无（电视剧、纪录片、动<br></span><span
+                    style="margin-left: 28%;">漫、综艺、电影）播放纪录片哦~</span>
+                <input class="csf_i" style="margin: 100px 0 0 35%;" type="button" onclick="land()" value="登陆查看更多">
+            </div>
+
+            <div class="land">
+                <div class="landf"></div>
+                <div style="width: 100%;color: #999999; font-size: 15px;padding: 15px 0 0 50px;cursor: default;">登录后可专享
+                </div>
+                <div class="landff"><img style="position: relative;top: 10px;left: 17px;" src="./imgs/icon14.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">播放记录同步</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon15.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">精彩剧情及时追</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon16.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">任务积分换礼</span></div>
+                <button style="background: #00BE06;
+                border: 0px;
+                border-radius: 10px;
+                color: white;
+                padding: 5px 12px 5px 12px;
+                margin-top: 2px;
+                margin-left: 20%;
+                cursor: pointer;
+                outline: none;" onclick="land()">登陆</button>
+                <a href="注册.html"><button class="land_c">注册</button></a>
+            </div>
+        </div>
+        <video style="margin-top: 10px;" width="780px" height="480px" controls="controls" autoplay="autoplay">
+            <source src="/i/movie.ogg" type="video/ogg" />
+            <source src="/i/movie.mp4" type="video/mp4" />
+            <source src="/i/movie.webm" type="video/webm" />
+            <object data="/i/movie.mp4" width="320" height="240">
+              <embed width="320" height="240" src="/i/movie.swf" />
+            </object>
+          </video>
+          <div style="position: absolute;padding: 20px 0 0 10px;"><span style="font-size:1.5rem">猜你喜欢</span></div>
+          <div style="height: 400px;width: 100%;padding-top: 50px;position: absolute;" >
+            <a href="#">
+                <div class="variety-e"><img class="variety-d" src="imgs/zong2.webp" alt=""><span
+                        style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                        style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+            </a>
+            <a href="#">
+                <div class="variety-e"><img class="variety-d" src="imgs/zong3.webp" alt=""><span
+                        style="font-size: 1.2rem;margin:10px 0 0 10px; color: black; color: black;">王牌对王牌</span><br><span
+                        style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+            </a>
+            <a href="#">
+                <div class="variety-e"><img class="variety-d" src="imgs/zong4.jpeg" alt=""><span
+                        style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                        style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+            </a>
+            <a href="#">
+                <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong6.webp"
+                        alt=""><span
+                        style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                        style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+            </a>
+            <a href="#">
+                <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong7.gif"
+                        alt=""><span
+                        style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                        style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+            </a>
+        </div>
+        <div style="height: 400px;width: 100%;padding-top: 50px;position: absolute;top: 130%;" >
+          <a href="#">
+              <div class="variety-e"><img class="variety-d" src="imgs/zong2.webp" alt=""><span
+                      style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                      style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+          </a>
+          <a href="#">
+              <div class="variety-e"><img class="variety-d" src="imgs/zong3.webp" alt=""><span
+                      style="font-size: 1.2rem;margin:10px 0 0 10px; color: black; color: black;">王牌对王牌</span><br><span
+                      style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+          </a>
+          <a href="#">
+              <div class="variety-e"><img class="variety-d" src="imgs/zong4.jpeg" alt=""><span
+                      style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                      style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+          </a>
+          <a href="#">
+              <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong6.webp"
+                      alt=""><span
+                      style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                      style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+          </a>
+          <a href="#">
+              <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong7.gif"
+                      alt=""><span
+                      style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                      style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+          </a>
+      </div>
+          <div style="float: right;padding-top: 10px;margin-right:180px;">
+              <div class="fei"><img src="imgs/guan1.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei" style="margin-top: 10px;"><img src="imgs/guan2.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei" style="margin-top: 10px;"><img src="imgs/guan3.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei" style="margin-top: 10px;"><img src="imgs/guan4.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei"><img src="imgs/guan1.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div  class="fei"style="margin-top: 10px;"><img src="imgs/guan2.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei"><img src="imgs/guan1.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+              <div class="fei" style="margin-top: 10px;"><img src="imgs/guan2.jpg"><span style="position: relative;top: -100px;">什么是肺炎？肺炎会传染吗？</span></div>
+             
+              
+          </div>
+          </div>
+          </div>
+          </div>
+          
+        <div id="tail" style="font-size: 1.7rem; margin-top: 300px;clear: both;">
+            <ul class="taila">
+                <li style="margin-left: 0;" class="tailaa">关于我们</li>
+                <li class="tailaa">About Us</li>
+                <li class="tailaa">内容合作</li>
+                <li class="tailaa">技术合作</li>
+                <li class="tailaa">招聘英才</li>
+                <li class="tailaa">常见问题</li>
+            </ul>
+            <div style="clear: both;"></div>
+            <ul class="tailb">
+              <a style="text-decoration: none;color: black;" href="公司介绍.html"><li class="tailbb">公司介绍</li></a>
+                <li class="tailbb">新闻动态</li>
+                <li class="tailbb">联系方式</li>
+                <li class="tailbb">用户协议</li>
+                <li class="tailbb">隐私政策</li>
+            </ul>
+            <ul  class="tailb" style="margin-left: 113px;">
+                <li class="tailbb">Investor Relations</li>
+                <li class="tailbb">Media Center</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 63px;">
+                <li class="tailbb">爱奇艺号</li>
+                <li class="tailbb">爱奇艺内容合作方式</li>
+                <li class="tailbb">互动视频标准</li>
+                <li class="tailbb">爱奇艺会员合作</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 40px;">
+                <li class="tailbb">安全应急响应中心</li>
+                <li class="tailbb">技术故障反馈</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 60px;">
+                <li class="tailbb">社会招聘</li>
+                <li class="tailbb">校园招聘</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 115px;">
+                <li class="tailbb">帮助中心</li>
+                <a style="color: black;text-decoration: none;" href="投诉.html"><li class="tailbb">侵权举报与投诉</li></a>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="swiper.min.js"></script>
+<script src="js.js"></script>
+</html>

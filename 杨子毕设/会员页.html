@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄金vip会员-尊享</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 100%;
+            height: 700px;
+            background: rgba(0, 190, 6, 0.144);
+            padding-top: 20px;
+        }
+
+        .box {
+            width: 700px;
+            height: 600px;
+            background: white;
+            margin: auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(left, #1C1916, rgb(67, 68, 70));
+            background: -ms-linear-gradient(left, #1C1916, rgb(67, 68, 70));
+            background: -webkit-linear-gradient(left, #1C1916, rgb(67, 68, 70));
+            background: -moz-linear-gradient(left, #1C1916, rgb(67, 68, 70));
+            border-bottom: 2px solid #FFD38B;
+        }
+
+        .x:hover {
+            background: #FFD089;
+            cursor: pointer;
+        }
+
+        .la {
+            width: 248px;
+            height: 148px;
+            background: rgba(202, 196, 196, 0.808);
+            border: 1px solid rgba(202, 196, 196, 0.521);
+            position: absolute;
+            top: 335px;
+            left: 520px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .laa {
+            width: 0;
+            height: 0;
+            border: 10px solid rgba(202, 196, 196, 0.521);
+            border-top: none;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            margin: auto;
+            margin-left: 90px;
+            margin-top: -10px;
+            z-index: 999;
+        }
+        .sweep_code{
+            position: relative  ;
+            right: -224px;
+            top: -202px;
+        }
+        .sweep_code1{
+            position: relative  ;
+            right: -230px;
+            top: -200px;display: none;
+        }
+        .sweep_code2{
+            position: relative  ;
+            right: -229px;
+            top: -200px;display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="box">
+            <div class="header">
+                <ul style="list-style-type: none;">
+                    <a href="所有会员.html" style="text-decoration: none;color:#FFD38B"><li style="float: right;margin-top: 80px;color: #FFD38B;margin-right: 20px;">所有会员</li></a>
+                    <a href="#"><li
+                        style="float: right;margin-top: 80px;color: #FFD38B;margin-right: 10px;border-right: 2px solid #FFD38B;padding-right: 15px;">
+                        会员卡激活</li></a>
+                </ul>
+                <img style="margin: 8px 0 0 10px;" src="imgs/vip-icon1.jpg">
+                <span style="color: #FFD38B;position: relative;top: -6px;font-size: 15px;">黄金vip会员</span><br>
+                <img src="imgs/vip-icon2.jpg" style="margin-left: 20px;margin-top: 10px;">
+                <a href="首页.html" style="text-decoration: none;"><span
+                        style="color:#FFD38B;position:relative;top: -30px;font-size: 15px;">立即登录</span></a><br>
+                <span
+                    style="color: #858585;position: relative;left: 75px;top: -30px">请登录后购买黄金vip会员。电脑、手机、ipad均可使用</span>
+            </div>
+            <div style="padding-top: 20px;">
+                <div onclick="oe(0)">
+                    <div class="x" onclick="on(0)"
+                        style="width: 203px;height: 110px;border: 1px solid rgb(190, 185, 185);margin-left: 20px;float: left;">
+                        <div style="margin-left: 70px;margin-top: 15px;"><span
+                                style="font-size: 16px;color: rgb(82, 79, 79);">连续包年</span></div></span><br>
+                        <div style="margin-left: 40px;"><span
+                                style="color: #BA7A5C;font-weight:bold;font-size: 20px;">$178.00</span><span
+                                style="text-decoration: line-through;color: rgb(185, 177, 177);">$198.00</span></div>
+                    </div>
+                </div>
+                <div onclick="oe1(1)">
+                    <div class="x" onclick="on(1)" onclick="oe(1)"
+                        style="width: 203px;height: 110px;border: 1px solid rgb(190, 185, 185);margin-left: 20px;float: left;">
+                        <div style="margin-left: 70px;margin-top: 15px;"><span
+                                style="font-size: 16px;color: rgb(82, 79, 79);">连续包季</span></div></span><br>
+                        <div style="margin-left: 40px;"><span
+                                style="color: #BA7A5C;font-weight:bold;font-size: 20px;">$45.00</span><span
+                                style="text-decoration: line-through;color: rgb(185, 177, 177);">$58.00</span></div>
+                    </div>
+                </div>
+                <div onclick="oe2(2)">
+                    <div class="x" onclick="on(2)" onclick="oe(2)"
+                        style="width: 203px;height: 110px;border: 1px solid rgb(190, 185, 185);margin-left: 20px;float: left;">
+                        <div style="margin-left: 70px;margin-top: 15px;"><span
+                                style="font-size: 16px;color: rgb(82, 79, 79);">连续包月</span></div></span><br>
+                        <div style="margin-left: 40px;"><span
+                                style="color: #BA7A5C;font-weight:bold;font-size: 20px;">$3.00</span><span
+                                style="text-decoration: line-through;color: rgb(185, 177, 177);">$19.80</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both; width: 100%; margin: 0 0 0 20px;padding-top: 20px;font-size: 15px;">到期按<sapn
+                    id="js">每年178元</sapn>自动续费，可随时取消<img style="cursor: pointer;" onmousemove="show()"
+                    onmouseout="leave()" src="imgs/vip-icon3.jpg" alt=""></div>
+            <div style="width: 655px;margin-left:20px;height: 236px;border: 1px solid #DCDCDC;margin-top: 20px;">
+                <div style="width: 150px;height: 236px;background: #F7F7F7;border-right: 1px solid #DCDCDC;">
+                    <img src="imgs/vip-icon4.jpg" style="margin: 50px 0 0 5px;">
+                </div>
+                <img class="sweep_code" src="imgs/vip-icon8.jpg">
+                <img class="sweep_code1" src="imgs/vip-icon6.jpg">
+                <img class="sweep_code2" src="imgs/vip-icon7.jpg">
+            </div>上传
+            <div class="la" onmousemove="show1()" onmouseout="leave1()">
+                <div class="laa"></div>
+                自动续费服务说明：<br><br>
+                1.会员权益到期前1天为您自动续费；<br>
+                2.扣款前消息通知，完全透明；<br>
+                3.尊享超低价，手机话费支付不享受此优惠；<br>
+                4.可随时取消服务，取消后不再自动续费。<br>
+                权益说明：
+                1.VIP会员仅支持在电脑端、移动端登录使用，不支持在电视端使用
+            </div>
+        </div>  
+    </div>
+</body>
+<script>
+    on = function (i) {
+        document.getElementsByClassName('x')[i].style.background = '#FFCF87'
+        for (var s = 0; s < 3; s++) {
+            if (s != i) document.getElementsByClassName('x')[s].style.background = 'white'
+        }
+        // console.log(i)
+        // if(i=1){alert('s')}else if(i=0){alert('s')}else alert('e')
+    }
+    var j = document.getElementById('js')
+    
+    oe = function () {
+        j.innerHTML = "每年178元"
+        document.getElementsByClassName('sweep_code')[0].style.display='block'
+        document.getElementsByClassName('sweep_code1')[0].style.display='none'
+        document.getElementsByClassName('sweep_code2')[0].style.display='none'
+    }
+    oe1 = function () {
+        j.innerHTML = "每季45元"
+        document.getElementsByClassName('sweep_code')[0].style.display='none'
+        document.getElementsByClassName('sweep_code1')[0].style.display='block'
+        document.getElementsByClassName('sweep_code2')[0].style.display='none'
+    }
+    oe2 = function () {
+        j.innerHTML = "每月15元"
+        document.getElementsByClassName('sweep_code')[0].style.display='none'
+        document.getElementsByClassName('sweep_code1')[0].style.display='none'
+        document.getElementsByClassName('sweep_code2')[0].style.display='block'
+    }
+    show = function () { document.getElementsByClassName('la')[0].style.display = "block" }
+    leave = function () { document.getElementsByClassName('la')[0].style.display = "none" }
+    show1 = function () { document.getElementsByClassName('la')[0].style.display = "block" }
+    leave1 = function () { document.getElementsByClassName('la')[0].style.display = "none" }
+</script>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投诉-申诉</title>
+    <link rel="stylesheet" href="./indexcss.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <style>
+        .yu {
+            background: rgba(0, 0, 0, 0.726);
+            width: 480px;
+            height: 25px;
+            border-radius: 20px;
+            padding-top: 5px;
+            position: absolute;
+            top: 75px;
+            left: 20px;
+        }
+
+        .yu a {
+            float: left;
+            color: rgb(216, 207, 207);
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 15px;
+        }
+
+        .yu a:hover {
+            color: #00BE06;
+        }
+
+        .brand:hover {
+            color: #00BE06;
+        }
+
+        .brand {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <a href="首页.html"><img style="margin: 10px 0 0 14px;" src="./imgs/logo.jpg"></a>
+            <input class="input" name="ifocus" onfocus="ifocus()" onblur="ibulrs()" id="ifocus" type="text"
+                placeholder="斗罗大陆">
+            <img class="focus" src="imgs/focus.jpg" alt="">
+            <div class="re"><a style="text-decoration: none;color: #66665B;" href="#" id="a">热搜榜</a></div>
+            <div class="suo">
+                <img style="position: relative;top: 8px;left: 5px;" src="./imgs/logo-f.png" alt="">
+                <a href="#">搜全网</a>
+            </div>
+            <div class="vip" style="float: right;margin-right: 6%;margin-top: 0.7rem;">
+                <a href="会员页.html"><img id="vip" onmousemove="show()" onmouseout="leave()" src="./imgs/vip.jpg"></a>
+                <a href="上传.html"><img id="fif" onmousemove="show1()" onmouseout="leave1()" src="./imgs/fif.jpg"></a>
+                <img id="cs" onmousemove="show2()" onmouseout="leave2()" src="./imgs/cs.jpg">
+                <a href="消息登陆.html"><img id="news" onmousemove="show3()" onmouseout="leave3()" src="./imgs/new.jpg"></a>
+                <a href="看过.html"><img id="le" onmousemove="show4()" onmouseout="leave4()" src="./imgs/le.jpg"></a>
+                <a href="登录.html"><img class="land_img" onmousemove="show5()" onmouseout="leave5()" src="./imgs/icon13.jpg"></a>
+            </div>
+        </header>
+        <div class="x">
+            <div class="vipt">
+                <div class="viptf"></div>
+                <div class="vipt_d" style="margin-top: 10px;"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon01.jpg"><span style="margin-left: 25px;font-size: 15px;">了解vip会员特权</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon02.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">领取vip会员福利</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon03.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">做任务，领奖励</span></div>
+                <input class="vipt_i" type="button" onclick="land()" value="登陆">
+            </div>
+
+            <div class="fiff">
+                <div class="fifff"></div>
+                <div class="vipt_e" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon04.jpg"><span style="margin-left: 25px;font-size: 15px;">发布作品</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon05.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">作品管理</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon06.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">爱奇艺号</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon07.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">我的空间</span></div>
+            </div>
+            <div class="cs">
+                <div class="csf"></div>
+                <div class="vipt_f" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon08.jpg"><span style="margin-left: 25px;font-size: 15px;">新用户广告特权</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon09.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">急速流畅播放</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon10.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">畅享4k视频</span></div>
+                <input class="csf_i" type="button" onclick="land()" value="立即体验">
+            </div>
+            <div class="new">
+                <div class="newf"></div>
+                <ui class="new_u">
+                    <div class="new_d"></div>
+                    <li>更新提醒</li>
+                    <div class="new_d1"></div>
+                    <li>与我相关</li>
+                    <div class="new_d2"></div>
+                    <li>系统消息</li>
+                </ui>
+                <img src="./imgs/icon11.jpg" style="margin: 30% 0 0 20%;"><br>
+                <span style="margin-left: 50px;"><a href="#"
+                        style="text-decoration: none;font-weight: bold;color-interpolation-filters: #00CCC7; "
+                        onclick="land()">登陆</a>后才能查看完整的通知列表哦~</span>
+            </div>
+            <div class="le">
+                <div class="lef"></div>
+                <img src="./imgs/icon12.jpg" style="margin:30% 0 0 24%;"><br>
+                <span style="margin-left: 30%;">暂无（电视剧、纪录片、动<br></span><span
+                    style="margin-left: 28%;">漫、综艺、电影）播放纪录片哦~</span>
+                <input class="csf_i" style="margin: 100px 0 0 35%;" type="button" onclick="land()" value="登陆查看更多">
+            </div>
+
+            <div class="land">
+                <div class="landf"></div>
+                <div style="width: 100%;color: #999999; font-size: 15px;padding: 15px 0 0 50px;cursor: default;">登录后可专享
+                </div>
+                <div class="landff"><img style="position: relative;top: 10px;left: 17px;" src="./imgs/icon14.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">播放记录同步</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon15.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">精彩剧情及时追</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon16.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">任务积分换礼</span></div>
+                <button style="background: #00BE06;
+                border: 0px;
+                border-radius: 10px;
+                color: white;
+                padding: 5px 12px 5px 12px;
+                margin-top: 2px;
+                margin-left: 20%;
+                cursor: pointer;
+                outline: none;" onclick="land()">登陆</button>
+                <a href="注册.html"><button class="land_c">注册</button></a>
+            </div>
+        </div>
+        <div style="padding:40px 0 0 40px;font-size: 1.5rem;">
+          1 为了确保通知删除的有效性，权利人应尽量提供下列材料的原件。不能提供原件的，应在提供的复印件上签章。<br>
+
+（1）填写完整的申请删除表单<br>
+
+通知书需由权利人或其合法授权的代理人亲笔签名，若为单位则需加盖单位公章。<br>
+
+（2）权利人主体信息材料<br>
+
+包括权利人的姓名（名称）、联系方式、地址及营业执照（法人）、身份证（个人）、相关授权证明等证明权利人主体资格的材料。<br>
+
+（3）构成侵权的初步证明材料<br>
+
+权利人应在通知书中写明请求删除或断开的链接的确切名称、链接地址以及上传者ID等信息。<br>
+
+若是知识产权侵权，则应提供权属证明材料（包括但不限于有权机构颁发的版权证书、商标权证书、专利权证书等）及侵权事实的举证。<br>
+
+若是其他权利侵权（名誉权、荣誉权、隐私权等），应提供相应的证明材料。<br>
+
+（4）权利人保证<br>
+
+权利人应当保证其在通知书中的陈述和提供的相关材料都是真实合法的，并保证承担和赔偿因根据权利人的通知书而删除或者断开有关侵权内容的链接而给爱奇艺公司造成的任何损失。<br>
+
+（5）其他材料<br>
+
+若权利人已向相关政府部门或法院提起行政投诉或诉讼的，可将受理证明及其他证据材料一并提交我司，这将有利于权利人的投诉的处理。<br>
+
+ 
+
+2.2 请点击进入以下通知删除申请通道进行线上申请或以邮寄方式寄送至：上海市长宁区临虹路365号爱奇艺创新大厦2层，法律部收 邮编：200335。<br>
+
+ 
+
+2.3 因各种情况不尽相同，在收到权利人的材料后，爱奇艺会尽快核实处理。<br>
+        </div>
+        <div id="tail" style="font-size: 1.7rem;">
+            <ul class="taila">
+                <li style="margin-left: 0;" class="tailaa">关于我们</li>
+                <li class="tailaa">About Us</li>
+                <li class="tailaa">内容合作</li>
+                <li class="tailaa">技术合作</li>
+                <li class="tailaa">招聘英才</li>
+                <li class="tailaa">常见问题</li>
+            </ul>
+            <div style="clear: both;"></div>
+            <ul class="tailb">
+                <a style="text-decoration: none;color: black;" href="公司介绍.html"><li class="tailbb">公司介绍</li></a>
+                <li class="tailbb">新闻动态</li>
+                <li class="tailbb">联系方式</li>
+                <li class="tailbb">用户协议</li>
+                <li class="tailbb">隐私政策</li>
+            </ul>
+            <ul  class="tailb" style="margin-left: 113px;">
+                <li class="tailbb">Investor Relations</li>
+                <li class="tailbb">Media Center</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 63px;">
+                <li class="tailbb">爱奇艺号</li>
+                <li class="tailbb">爱奇艺内容合作方式</li>
+                <li class="tailbb">互动视频标准</li>
+                <li class="tailbb">爱奇艺会员合作</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 40px;">
+                <li class="tailbb">安全应急响应中心</li>
+                <li class="tailbb">技术故障反馈</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 60px;">
+                <li class="tailbb">社会招聘</li>
+                <li class="tailbb">校园招聘</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 115px;">
+                <li class="tailbb">帮助中心</li>
+                <a style="color: black;text-decoration: none;" href="投诉.html"><li class="tailbb">侵权举报与投诉</li></a>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="swiper.min.js"></script>
+<script src="js.js"></script>
+
+</html>

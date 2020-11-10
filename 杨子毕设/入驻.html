@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上传</title>
+
+  <link rel="stylesheet" href="swiper.min.css">
+  <style>
+    .yu {
+      background: rgba(0, 0, 0, 0.726);
+      width: 480px;
+      height: 25px;
+      border-radius: 20px;
+      padding-top: 5px;
+      position: absolute;
+      top: 75px;
+      left: 20px;
+    }
+
+    .yu a {
+      float: left;
+      color: rgb(216, 207, 207);
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 15px;
+    }
+
+    .yu a:hover {
+      color: #00BE06;
+    }
+
+    .brand:hover {
+      color: #00BE06;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+
+    .feng {
+      width: 100%;
+      height: 310px;
+      background: black;
+      background: linear-gradient(to top, #D1CAC1, #211A0F)
+    }
+
+    .feng_k {
+      float: left;
+      margin-left: 28px;
+    }
+
+    .feng_k:hover {
+      box-shadow: 0px 0 10px black;
+      cursor: pointer;
+    }
+
+    header {
+      width: 100%;
+      height: 65px;
+      background-color: #232325;
+    }
+
+    header input {
+      background-color: #333333;
+      border: 0px;
+      height: 43px;
+      width: 25%;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      position: absolute;
+      top: 10px;
+      left: 33%;
+      padding-left: 1%;
+      outline: none;
+      font-size: 1.2rem;
+      color: #ccccb2;
+    }
+
+    .focus {
+      position: absolute;
+      top: 55px;
+      right: 587px;
+      z-index: 999;
+      display: none;
+    }
+
+    header input:hover {
+      background: rgb(68, 68, 68);
+    }
+
+    header ::-webkit-input-placeholder {
+      color: #999999;
+      font-size: 1.2rem;
+    }
+
+    .re {
+      position: absolute;
+      top: 1.8rem;
+      left: 53%;
+      z-index: 0;
+      color: #66665b;
+      font-size: 1.2rem;
+    }
+
+    .suo {
+      width: 100px;
+      height: 45px;
+      background: #00be06;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      position: absolute;
+      top: 0.8rem;
+      left: 57.0%;
+      cursor: pointer;
+    }
+
+    .suo:hover {
+      background: #00c806;
+    }
+
+    .suo a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.3rem;
+      margin-left: 10px;
+    }
+
+    .vip img {
+      margin-right: 1.5rem;
+      cursor: pointer;
+    }
+
+    #swiper {
+      width: 100%;
+      height: 430px;
+      padding: 0;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    .vipt {
+      width: 200px;
+      height: 170px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 240px;
+      display: none;
+    }
+
+    .viptf {
+      width: 0;
+      height: 0;
+      border: 8px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: auto;
+      margin-top: -8px;
+    }
+
+    .fiff {
+      width: 150px;
+      height: 165px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 215px;
+      display: none;
+    }
+
+    .fifff {
+      width: 0;
+      height: 0;
+      border: 8px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: auto;
+      margin-top: -8px;
+    }
+
+    .cs {
+      width: 183px;
+      height: 174px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 137px;
+      display: none;
+    }
+
+    .csf {
+      width: 0;
+      height: 0;
+      border: 8px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: auto;
+      margin-top: -8px;
+    }
+
+    .new {
+      width: 303px;
+      height: 389px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 110px;
+      display: none;
+    }
+
+    .newf {
+      width: 0;
+      height: 0;
+      border: 8px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin-top: -8px;
+      margin-left: 237px;
+    }
+
+    .le {
+      width: 300px;
+      height: 390px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 45px;
+      display: none;
+    }
+
+    .lef {
+      width: 0;
+      height: 0;
+      border: 8px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: auto;
+      margin-left: 220px;
+      margin-top: -8px;
+    }
+
+    .land {
+      width: 190px;
+      height: 210px;
+      background: white;
+      z-index: 990;
+      border-radius: 10px;
+      position: absolute;
+      right: 32px;
+      display: none;
+    }
+
+    .landf {
+      width: 0;
+      height: 0;
+      border: 10px solid white;
+      border-top: none;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: auto;
+      margin-left: 160px;
+      margin-top: -10px;
+      z-index: 999;
+    }
+
+    .land_img {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      cursor: pointer
+    }
+
+    .land_img:hover {
+      background-color: #00be06;
+    }
+
+    .vipt_d {
+      width: 100%;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .vipt_d:hover {
+      background: #f5f5f5;
+      color: #c8a06a;
+    }
+
+    .vipt_e {
+      width: 100%;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .vipt_e:hover {
+      background: #f5f5f5;
+      color: #00be06;
+    }
+
+    .vipt_f {
+      width: 100%;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .vipt_f:hover {
+      background: #f5f5f5;
+      color: #00be06;
+    }
+
+    .landff {
+      width: 100%;
+      padding-bottom: 10px;
+      margin-top: 7px;
+      cursor: pointer;
+    }
+
+    .landff:hover {
+      background: #f5f5f5;
+      color: #00be06;
+    }
+
+    .vipt_i {
+      background: #c8a06a;
+      border: 0px;
+      border-radius: 10px;
+      color: white;
+      padding: 5px 12px 5px 12px;
+      margin-left: 40%;
+      margin-top: 2px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .vipt_i:hover {
+      background-color: #E2BC81;
+    }
+
+    .csf_i {
+      background: #00BE06;
+      border: 0px;
+      border-radius: 10px;
+      color: white;
+      padding: 5px 12px 5px 12px;
+      margin-left: 30%;
+      margin-top: 2px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .csf_i:hover {
+      background-color: #00C806;
+    }
+
+    .new_u {
+      list-style-type: none;
+    }
+
+    .new_u li {
+      float: left;
+      font-size: 15px;
+      padding: 15px 21px 10px 20px;
+      cursor: pointer;
+      border-bottom: 2px solid rgb(136, 133, 133);
+      z-index: 990;
+    }
+
+    .new_u li:hover {
+      color: #00C806;
+    }
+
+    .new_d {
+      width: 30px;
+      height: 43px;
+      position: absolute;
+      right: 238px;
+      border-bottom: 4px solid #00BE06;
+    }
+
+    .taila {
+      list-style-type: none;
+    }
+
+    .tailaa {
+      float: left;
+      margin-left: 10%;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .tailb {
+      float: left;
+      list-style-type: none;
+      font-size: 1.2rem;
+    }
+
+    .tailbb {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .tailbb:hover {
+      color: #00BE06;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-top {
+      height: 80%;
+      width: 100%;
+    }
+
+    .gallery-thumbs {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .fei:hover {
+      color: #0BC111;
+      cursor: pointer;
+    }
+
+    body {
+      margin: 0;
+    }
+    #pu_pu{
+        width: 122px;
+        height: 122px;
+    }
+    #pu_pu:hover{
+        box-shadow: 2px 0 3px rgb(3, 73, 32);
+        cursor: pointer;
+    }
+  </style>
+  <style>
+      .people{
+        margin-left: 20%;margin-top: 10%;
+      }
+      .people:hover{
+          box-shadow: 2px 1px 1px  1px rgb(133, 129, 129);
+          cursor: pointer;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+      <div style="background: rgb(204, 201, 201); height: 100%;"><img style="position: fixed;top: 0;" src="imgs/ru.jpg" alt="">
+        <img src="imgs/ru2.jpg" style="margin: 130px 0 0 6.1%;width: 88%;">
+        <div style="width: 88%;height: 500px;background: rgb(255, 255, 255);margin: auto;margin-top: 10px;">
+        <img class="people" src="imgs/ru3.jpg"><img class="people" src="imgs/ru4.jpg"></div>
+        <div id="tail" style="font-size: 1.7rem; margin-top: 0px;">
+            <ul class="taila">
+              <li style="margin-left: 0;" class="tailaa">关于我们</li>
+              <li class="tailaa">About Us</li>
+              <li class="tailaa">内容合作</li>
+              <li class="tailaa">技术合作</li>
+              <li class="tailaa">招聘英才</li>
+              <li class="tailaa">常见问题</li>
+            </ul>
+            <div style="clear: both;"></div>
+            <ul class="tailb">
+                <a style="text-decoration: none;color: black;" href="公司介绍.html"><li class="tailbb">公司介绍</li></a>
+              <li class="tailbb">新闻动态</li>
+              <li class="tailbb">联系方式</li>
+              <li class="tailbb">用户协议</li>
+              <li class="tailbb">隐私政策</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 113px;">
+              <li class="tailbb">Investor Relations</li>
+              <li class="tailbb">Media Center</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 63px;">
+              <li class="tailbb">爱奇艺号</li>
+              <li class="tailbb">爱奇艺内容合作方式</li>
+              <li class="tailbb">互动视频标准</li>
+              <li class="tailbb">爱奇艺会员合作</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 40px;">
+              <li class="tailbb">安全应急响应中心</li>
+              <li class="tailbb">技术故障反馈</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 60px;">
+              <li class="tailbb">社会招聘</li>
+              <li class="tailbb">校园招聘</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 115px;">
+              <li class="tailbb">帮助中心</li>
+              <a style="color: black;text-decoration: none;" href="投诉.html"><li class="tailbb">侵权举报与投诉</li></a>
+            </ul>
+          </div>
+    </div>
+      
+    
+  </div>
+</body>
+<script src="swiper.min.js"></script>
+<script src="js.js"></script>
+
+</html>

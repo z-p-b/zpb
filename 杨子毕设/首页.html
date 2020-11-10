@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海澜综艺-在线视频网站</title>
+    <link rel="stylesheet" href="./indexcss.css">
+    <link rel="stylesheet" href="swiper.min.css">
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <a href="首页.html"><img style="margin: 10px 0 0 14px;" src="./imgs/logo.png"></a>
+            <input class="input" name="ifocus" onfocus="ifocus()" onblur="ibulrs()" id="ifocus" type="text"
+                placeholder="斗罗大陆">
+            <img class="focus" src="imgs/focus.jpg" alt="">
+            <div class="re"><a style="text-decoration: none;color: #66665B;" href="#" id="a">热搜榜</a></div>
+            <div class="suo">
+                <img style="position: relative;top: 8px;left: 5px;" src="./imgs/logo-f.png" alt="">
+                <a href="#">搜索</a>
+            </div>
+            <div class="vip" style="float: right;margin-right: 6%;margin-top: 0.7rem;">
+                <a href="./会员页.html"><img id="vip" onmousemove="show()" onmouseout="leave()" src="./imgs/vip.jpg"></a>
+                <a href="./上传.html"><img id="fif" onmousemove="show1()" onmouseout="leave1()" src="./imgs/fif.jpg"></a>
+                <img id="cs" onmousemove="show2()" onmouseout="leave2()" src="./imgs/cs.jpg">
+                <a href="./消息登陆.html"></a><img id="news" onmousemove="show3()" onmouseout="leave3()" src="./imgs/new.jpg"></a>
+                <a href="./看过.html"><img id="le" onmousemove="show4()" onmouseout="leave4()" src="./imgs/le.jpg"></a>
+                <a href="./登录.html"><img class="land_img" onmousemove="show5()" onmouseout="leave5()"
+                        src="./imgs/icon13.jpg"></a>
+            </div>
+        </header>
+        <div class="x">
+            <div class="vipt">
+                <div class="viptf"></div>
+                <div class="vipt_d" style="margin-top: 10px;"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon01.jpg"><span style="margin-left: 25px;font-size: 15px;">了解vip会员特权</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon02.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">领取vip会员福利</span></div>
+                <div class="vipt_d"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon03.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">做任务，领奖励</span></div>
+                <input class="vipt_i" type="button" onclick="land()" value="登陆">
+            </div>
+
+            <div class="fiff">
+                <div class="fifff"></div>
+                <div class="vipt_e" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon04.jpg"><span style="margin-left: 25px;font-size: 15px;">发布作品</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon05.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">作品管理</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon06.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">海澜号</span></div>
+                <div class="vipt_e"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon07.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">我的空间</span></div>
+            </div>
+            <div class="cs">
+                <div class="csf"></div>
+                <div class="vipt_f" style="margin-top: 10px"><img style="position: relative;top: 6px;left: 17px;"
+                        src="./imgs/icon08.jpg"><span style="margin-left: 25px;font-size: 15px;">新用户广告特权</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon09.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">急速流畅播放</span></div>
+                <div class="vipt_f"><img style="position: relative;top: 6px;left: 17px;" src="./imgs/icon10.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">畅享4k视频</span></div>
+                <input class="csf_i" type="button" onclick="land()" value="立即体验">
+            </div>
+            <div class="new">
+                <div class="newf"></div>
+                <ui class="new_u">
+                    <div class="new_d"></div>
+                    <li>更新提醒</li>
+                    <div class="new_d1"></div>
+                    <li>与我相关</li>
+                    <div class="new_d2"></div>
+                    <li>系统消息</li>
+                </ui>
+                <img src="./imgs/icon11.jpg" style="margin: 30% 0 0 20%;"><br>
+                <span style="margin-left: 50px;"><a href="#"
+                        style="text-decoration: none;font-weight: bold;color-interpolation-filters: #00CCC7; "
+                        onclick="land()">登陆</a>后才能查看完整的通知列表哦~</span>
+            </div>
+            <div class="le">
+                <div class="lef"></div>
+                <img src="./imgs/icon12.jpg" style="margin:30% 0 0 24%;"><br>
+                <span style="margin-left: 30%;">暂无（电视剧、纪录片、动<br></span><span
+                    style="margin-left: 28%;">漫、综艺、电影）播放纪录片哦~</span>
+                <input class="csf_i" style="margin: 100px 0 0 35%;" type="button" onclick="land()" value="登陆查看更多">
+            </div>
+
+            <div class="land">
+                <div class="landf"></div>
+                <div style="width: 100%;color: #999999; font-size: 15px;padding: 15px 0 0 50px;cursor: default;">登录后可专享
+                </div>
+                <div class="landff"><img style="position: relative;top: 10px;left: 17px;" src="./imgs/icon14.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">播放记录同步</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon15.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">精彩剧情及时追</span></div>
+                <div class="landff"><img style="position: relative;top: 6px;left: 17px;" src="imgs/icon16.jpg"><span
+                        style="margin-left: 25px;font-size: 15px;">任务积分换礼</span></div>
+                <button style="background: #00BE06;
+                border: 0px;
+                border-radius: 10px;
+                color: white;
+                padding: 5px 12px 5px 12px;
+                margin-top: 2px;
+                margin-left: 20%;
+                cursor: pointer;
+                outline: none;" onclick="land()">登陆</button>
+                <a href="注册.html"><button class="land_c">注册</button></a>
+            </div>
+        </div>
+
+        <div id="swiper" class="banner">
+            <div class="swiper-container" id="hh">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon.jpg"></div>
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon2.jpg"></div>
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon3.jpg"></div>
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon4.jpg"></div>
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon5.jpg"></div>
+                    <div class="swiper-slide"><img width="100%" src="./imgs/licon6.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div id="denglu">
+            <div class="login">
+                <img src="./imgs/1.png">
+                <button onclick="login_x()" class="login_x">X</button>
+                <div class="modal-content">
+                    <h4>账号登录</h4>
+
+                    <form id="logo.form" name="form">
+                        <span style="position: relative;right: 170px;color: black">账号/邮箱*<br></span>
+                        <input id="value" name="value" type="text" placeholder="邮箱/手机号/账号">
+                        <span style="position: relative;right: 185px;color: black">密码*<br></span>
+                        <input type="password" placeholder="密码" name="pasd" />
+                        <input type="button" value="立即登录" id="logo-button" />
+                    </form>
+                    <p class="other-link">
+                        <a class="aq" href="注册.html">注册账号</a>
+                        <a class="aq" href="#">忘记密码?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="guide">
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <a style="text-decoration: none;color: #CCCCCC;" ; href="娱乐页.html">
+                        <li>娱乐</li>
+                    </a>
+                    <li style="margin-top: 10px;">电影</li>
+                </ul>
+            </div>
+            <div>
+                <a href="./登录.html">
+                <ul class="guide_a" style="margin: 0;">
+                    <li>电影</li></a>
+                    <li style="margin-top: 10px;">网络电影</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>电视剧</li>
+                    <li style="margin-top: 10px;">片花</li>
+                </ul>
+            </div>
+            <div
+                style="color: blue;border-right:1px transparent solid;border-image:linear-gradient(to bottom,#232325,#8c8c8f,#232325)1 1 1;padding-right: 20px;">
+                <ul class="guide_a" style="margin: 0;">
+                    <li>综艺</li>
+                    <li style="margin-top: 10px;">脱口秀</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>动漫</li>
+                    <li style="margin-top: 10px;">游戏</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>搞笑</li>
+                    <li style="margin-top: 10px;">旅游</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>音乐</li>
+                    <li style="margin-top: 10px;">时尚</li>
+                </ul>
+            </div>
+            <div
+                style="color: blue;border-right:1px transparent solid;border-image:linear-gradient(to bottom,#232325,#8c8c8f,#232325)1 1 1;padding-right: 20px;">
+                <ul class="guide_a" style="margin: 0;">
+                    <li>原创</li>
+                    <li style="margin-top: 10px;">体育</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>财经</li>
+                    <li style="margin-top: 10px;">科技</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>知识</li>
+                    <li style="margin-top: 10px;">教育</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>儿童</li>
+                    <li style="margin-top: 10px;">母婴</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>生活</li>
+                    <li style="margin-top: 10px;">健康</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>军事</li>
+                    <li style="margin-top: 10px;">汽车</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="guide_a" style="margin: 0;">
+                    <li>公益</li>
+                    <li style="margin-top: 10px;">纪录片</li>
+                </ul>
+            </div>
+            <div
+                style="color: blue;border-right:1px transparent solid;border-image:linear-gradient(to bottom,#232325,#8c8c8f,#232325)1 1 1;padding-right: 20px;">
+                <ul class="guide_a" style="margin: 0;">
+                    <li>文学</li>
+                    <li style="margin-top: 10px;">漫画</li>
+                </ul>
+            </div>
+            <img src="imgs/icon17.jpg" style="position: relative;left: 40px;top: -10px;cursor: pointer;">
+        </div>
+        <div style="margin-top: 20px;">
+            <img style="float: left;margin-left: 20px;margin-top: 10px;" src="imgs/icon18.jpg" alt="">
+            <h1 style="float: left;">今日焦点</h1>
+            <div style="padding-top: 29px;" id="jiao">
+                <a href="#" class="jiao" style="margin-left: 20px;">阳台里的武汉/</a>
+                <a class="jiao" href="#">防控疫情公益歌曲展播/</a>
+                <a class="jiao" href="#">更多热点></a></div>
+        </div>
+        <div class="lala" style="height: 200px;padding: 0 25px 0 25px;">
+            <div class="swiper-container" id="lala">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="今日焦点.html"></a><img class="h" src="imgs/jiao.jpg" ;><span
+                            class="s_s" style="position: absolute; bottom: 10px;">31例新增病例</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao1.jpg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">武汉市还要封多久？</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao2.jpg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">疫情防控的关键</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao5.jpeg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">小区保安被刺</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao.jpg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">惯性病毒趋势</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao1.jpg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">武汉市还要封多久？</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao2.jpg"></a><span
+                            class="s_s" style="position: absolute;bottom: 10px;">病毒防治措施</span></div>
+                    <div class="swiper-slide"><a href="今日焦点.html"><img class="h" src="imgs/jiao5.jpeg"></a><span
+                            class="s_s" style="position: absolute;bottom: -7px;">《猎心者》李佳航，我是一个比较热心的人</span></div>
+
+                </div>
+                <!-- Add Arrows -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-nexta"></div>
+                <div class="swiper-button-preva"></div>
+            </div>
+        </div>
+        <div class="variety" style="margin-top: 50px;width:100%">
+            <div style="margin-top: 20px;">
+                <img style="float: left;margin-left: 20px;margin-top: 10px;" src="imgs/zong.jpg"  alt="">
+                <h1 style="float: left;" class="variety-a" >综艺&nbsp;<span style="font-size: 1rem;">更多></span></h1>
+                <div style="padding-top: 29px;width: 100%;">
+                    <a href="#" class="jiao" style="margin-left: 20px;">王牌对王牌5/</a>
+                    <a class="jiao" href="#">歌手·当打之年/</a>
+                    <a class="jiao" href="#">欢乐喜剧人6</a>
+                </div>
+                <a href="#" class="variety-b"><span style="font-size: 2rem;">精彩推荐</span>&nbsp;更多></a>
+            </div>
+            <div style="height: 400px;width: 100%;padding-top: 50px;" >
+                <a href="./登录.html">
+                    <div class="vv" style="width: 30%;"><img class="vv-a" src="imgs/zong1.webp"><br><span
+                            style="font-size: 1.2rem;margin:0px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong2.webp" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">贾玲国名闺女相视一笑</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">相视一笑倾国倾城</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong3.webp" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black; color: black;">邓加伦与郑微微合唱</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">合唱镜头惊爆众人眼球</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong4.jpeg" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">情侣深情合唱</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">合唱甜蜜镜头被摄像机拍下</span></div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="variety-f"><img class="variety-d" src="imgs/zong5.jpeg" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span>
+                        <div style="width: 100%;height: 180px;margin-top: 20px;padding: 10px 0 0 10px;">
+                            <div class="san" style="float: left;"></div><a
+                                style="float: left;margin-top: -4px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">彭昱畅回应恋情：点个赞</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">我是唱作人2完整版</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">简恺乐自爆喜欢罗志祥</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">《中国新说唱》海选</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">王凯综艺名场面海选</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong6.webp"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">贾玲冷眸以对凯老</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">冷眸一幕被摄像机拍下</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong7.gif"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">美食的诱惑</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">开动夜宵啦大家</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/zong8.webp"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王牌对王牌</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">关晓彤陷入“五个字谜团”</span></div>
+                </a>
+            </div>
+        </div>
+        <div class="self-control" style="width: 100%;height: 300px;clear: both;">
+            <div style="margin-top: 20px;">
+                <h1 style="float: left;margin-left: 2%;" class="variety-a">自制综艺&nbsp;<span
+                        style="font-size: 1rem;">更多></span></h1>
+                <div style="padding-top: 29px;width: 100%;">
+                    <a href="#" class="jiao" style="margin-left: 20px;">青春有你2/</a>
+                    <a class="jiao" href="#">我是唱作人2/</a>
+                    <a class="jiao" href="#">喜欢你我也是2</a>
+                </div>
+            </div>
+            <div style="width: 100%;height: 20px;"></div>
+            <div class="self"><img src="imgs/self.webp" alt=""><span
+                    style="font-size: 1.2rem;color:#00BE06;">青春有你2</span>&nbsp;第15期：曾可妮马甲线引徐佳琪痴迷</div>
+            <div class="self"><img src="imgs/self1.webp" alt=""><span
+                    style="font-size: 1.2rem;color:#00BE06;">青春有你2升级版 · </span>&nbsp;第10期 刘雨昕“解忧杂货铺”营业中</div>
+            <div class="self"><img src="imgs/self2.webp" alt=""><span
+                    style="font-size: 1.2rem;color:#00BE06;"> 我是唱作人2</span>&nbsp;第5期：GAI曲风突变唱情歌</div>
+            <div class="self"><img src="imgs/self3.webp" alt=""><span
+                    style="font-size: 1.2rem;color:#00BE06;">开饭啦唱作人</span>&nbsp;第5期：GAI期待和华晨宇PK</div>
+            <div class="self"><img src="imgs/self4.webp" alt=""><span
+                    style="font-size: 1.2rem;color:#00BE06;">青春有你2</span>&nbsp;第15期：曾可妮马甲线引徐佳琪痴迷</div>
+            
+        </div>
+        <div class="variety" style="margin-top: 50px;width:100%">
+            <div style="margin-top: 20px;">
+                <img style="float: left;margin-left: 20px;margin-top: 10px;" src="imgs/zong.jpg" alt="">
+                <h1 style="float: left;" class="variety-a">综艺&nbsp;<span style="font-size: 1rem;">更多></span></h1>
+                <div style="padding-top: 29px;width: 100%;">
+                    <a href="#" class="jiao" style="margin-left: 20px;">王牌对王牌5/</a>
+                    <a class="jiao" href="#">歌手·当打之年/</a>
+                    <a class="jiao" href="#">欢乐喜剧人6</a>
+                </div>
+                <a href="#" class="variety-b"><span style="font-size: 2rem;">精彩推荐</span>&nbsp;更多></a>
+            </div>
+            <div style="height: 400px;width: 100%;padding-top: 50px;" >
+                <a href="#">
+                    <div class="vv" style="width: 30%;"><img class="vv-a" src=imgs/zong9.png><br><span
+                            style="font-size: 1.2rem;margin:0px 0 0 10px; color: black;">巧手神探</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">Baby徒手抓“蛇”突袭杜海涛 周震南：我周震南了</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong10.png" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">蔡徐坤激情爆料</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">长得帅也有错?</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong11.png" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black; color: black;">亲爱的来吃饭</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">求婚现场强助攻</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e"><img class="variety-d" src="imgs/zong12.png" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">王宝强最新电影</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">比天空辽阔如日光</span></div>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <div class="variety-f"><img class="variety-d" src="imgs/zong13.png" alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">天赐的声音</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">比赛现场惊现黑马选手</span>
+                        <div style="width: 100%;height: 180px;margin-top: 20px;padding: 10px 0 0 10px;">
+                            <div class="san" style="float: left;"></div><a
+                                style="float: left;margin-top: -4px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">彭昱畅回应恋情：点个赞</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">我是唱作人2完整版</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">简恺乐自爆喜欢罗志祥</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">《中国新说唱》海选</a>
+                            <div class="san" style="float: left;clear: both;margin-top: 20px;"></div><a
+                                style="float: left;margin-top: 15px;text-decoration: none;color: black;font-size: 1.3rem;"
+                                href="#">王凯综艺名场面海选</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/self.webp"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">笑起来真好看</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">国民颜值巅峰之作</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/self1.webp"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">非常道05-13期
+                            </span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">王凯谈《清平乐》帝后情感</span></div>
+                </a>
+                <a href="#">
+                    <div class="variety-e" style="margin-top:20px"><img class="variety-d" src="imgs/self2.webp"
+                            alt=""><span
+                            style="font-size: 1.2rem;margin:10px 0 0 10px; color: black;">我要这样生活</span><br><span
+                            style="font-size: 0.8rem;color: #999999;margin: 10px 0 0 10px;">第2期：范丞丞告白小鬼获婧言回复</span></div>
+                </a>
+            </div>
+        </div>
+        <div style="width: 97%;height: 155px;margin: auto;margin-top: 40px;">
+            <a href="公益平台.html">
+                <div class="unit"><img src="imgs/t1.png"><br><span>公益平台</span><img style="margin:0;" src="imgs/t7.jpg">
+                </div>
+            </a>
+            <div class="unit"><img src="imgs/t2.png"><br><span>海澜号</span><img style="margin:0;" src="imgs/t7.jpg">
+            </div>
+            <div class="unit"><img src="imgs/t3.png"><br><span>广告频道</span><img style="margin:0;" src="imgs/t7.jpg">
+            </div>
+            <div class="unit"><img src="imgs/t4.png"><br><span>海澜游戏</span><img style="margin:0;" src="imgs/t7.jpg">
+            </div>
+            <div class="unit"><img src="imgs/t5.png"><br><span style="margin-left:20%;">海澜应用商店</span><img
+                    style="margin:0;" src="imgs/t7.jpg"></div>
+            <div class="unit"><img src="imgs/t6.png"><br><span>海澜商城</span><img style="margin:0;" src="imgs/t7.jpg">
+            </div>
+        </div>
+        <div id="tail" style="font-size: 1.7rem;">
+            <ul class="taila">
+                <li style="margin-left: 0;" class="tailaa">关于我们</li>
+                <li class="tailaa">About Us</li>
+                <li class="tailaa">内容合作</li>
+                <li class="tailaa">技术合作</li>
+                <li class="tailaa">招聘英才</li>
+                <li class="tailaa">常见问题</li>
+            </ul>
+            <div style="clear: both;"></div>
+            <ul class="tailb">
+                <a style="text-decoration: none;color: black;" href="./公司介绍.html">
+                    <li class="tailbb">公司介绍</li>
+                </a>
+                <li class="tailbb">新闻动态</li>
+                <li class="tailbb">联系方式</li>
+                <li class="tailbb">用户协议</li>
+                <li class="tailbb">隐私政策</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 113px;">
+                <li class="tailbb">Investor Relations</li>
+                <li class="tailbb">Media Center</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 63px;">
+                <li class="tailbb">海澜号</li>
+                <li class="tailbb">海澜内容合作方式</li>
+                <li class="tailbb">互动视频标准</li>
+                <li class="tailbb">海澜会员合作</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 40px;">
+                <li class="tailbb">安全应急响应中心</li>
+                <li class="tailbb">技术故障反馈</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 60px;">
+                <li class="tailbb">社会招聘</li>
+                <li class="tailbb">校园招聘</li>
+            </ul>
+            <ul class="tailb" style="margin-left: 115px;">
+                <li class="tailbb">帮助中心</li>
+                <a style="color: black;text-decoration: none;" href="投诉.html">
+                    <li class="tailbb">侵权举报与投诉</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="swiper.min.js"></script>
+<script text="text/javascript">
+    var swiper1 = new Swiper('#lala', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 6,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    // document.getElementById('ifocus').focus()
+    var i = document.getElementsByClassName('focus')[0]
+
+    function ifocus() {
+        i.style.display = "block"
+    }
+    function ibulrs() {
+        i.style.display = "none"
+    }
+
+    document.getElementById('a').onmousemove = function () {
+        document.getElementById('a').style.color = "#00BE06"
+    }
+    document.getElementById('a').onmouseout = function () {
+        document.getElementById('a').style.color = '#66665B'
+    }
+
+    function show() {
+        document.getElementsByClassName("vipt")[0].style.display = "block";
+    }
+    function leave() {
+        document.getElementsByClassName("vipt")[0].style.display = "none"
+    }
+    function show1() {
+        document.getElementsByClassName("fiff")[0].style.display = "block";
+    }
+    function leave1() {
+        document.getElementsByClassName("fiff")[0].style.display = "none"
+    }
+    function show2() {
+        document.getElementsByClassName("cs")[0].style.display = "block";
+    }
+    function leave2() {
+        document.getElementsByClassName("cs")[0].style.display = "none"
+    }
+    function show3() {
+        document.getElementsByClassName("new")[0].style.display = "block";
+    }
+    function leave3() {
+        document.getElementsByClassName("new")[0].style.display = "none"
+    }
+    function show4() {
+        document.getElementsByClassName("le")[0].style.display = "block";
+    }
+    function leave4() {
+        document.getElementsByClassName("le")[0].style.display = "none"
+    }
+    function show5() {
+        document.getElementsByClassName("land")[0].style.display = "block";
+    }
+    function leave5() {
+        document.getElementsByClassName("land")[0].style.display = "none"
+    }
+    document.getElementsByClassName('vipt')[0].onmousemove = function () {
+        document.getElementsByClassName("vipt")[0].style.display = "block";
+    }
+    document.getElementsByClassName('vipt')[0].onmouseout = function () {
+        document.getElementsByClassName("vipt")[0].style.display = "none";
+    }
+    document.getElementsByClassName('fiff')[0].onmousemove = function () {
+        document.getElementsByClassName("fiff")[0].style.display = "block";
+    }
+    document.getElementsByClassName('fiff')[0].onmouseout = function () {
+        document.getElementsByClassName("fiff")[0].style.display = "none";
+    }
+    document.getElementsByClassName('cs')[0].onmousemove = function () {
+        document.getElementsByClassName("cs")[0].style.display = "block";
+    }
+    document.getElementsByClassName('cs')[0].onmouseout = function () {
+        document.getElementsByClassName("cs")[0].style.display = "none";
+    }
+    document.getElementsByClassName('new')[0].onmousemove = function () {
+        document.getElementsByClassName("new")[0].style.display = "block";
+    }
+    document.getElementsByClassName('new')[0].onmouseout = function () {
+        document.getElementsByClassName("new")[0].style.display = "none";
+    }
+    document.getElementsByClassName('le')[0].onmousemove = function () {
+        document.getElementsByClassName("le")[0].style.display = "block";
+    }
+    document.getElementsByClassName('le')[0].onmouseout = function () {
+        document.getElementsByClassName("le")[0].style.display = "none";
+    }
+    document.getElementsByClassName('land')[0].onmousemove = function () {
+        document.getElementsByClassName("land")[0].style.display = "block";
+    }
+    document.getElementsByClassName('land')[0].onmouseout = function () {
+        document.getElementsByClassName("land")[0].style.display = "none";
+    }
+    var swiper = new Swiper('#hh', {
+        slidesPerView: 1,
+        autoplay: true,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    login_x = function () {
+        document.getElementById('denglu').style.display = "none"
+    }
+    land = function () {
+        document.getElementById('denglu').style.display = "block"
+    }
+    document.getElementById('logo-button').onclick = function () {
+        if (document.form.value.value != 12345678) {
+            alert('账号错误！请重新输入')
+        } else if (document.form.pasd.value != 123456) {
+            alert('密码错误！请重新输入')
+        } else {
+            document.getElementById('denglu').style.display = "none"
+            alert('登陆成功！')
+        }
+    }
+
+</script>
+
+</html>
